@@ -11,9 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
-
-  background: rgb(0,255,233);
-  background: linear-gradient(71deg, rgba(0,200,250,1) 0%, rgba(223,60,60,1) 100%); 
+  
 }
 
 .hero {
@@ -28,12 +26,15 @@ body {
 
   color: transparent;
   
-  
-  
+  /* background-image: url("/assets/images/home-bg.jpg"); */
+  background: rgb(0,255,233);
+  background: linear-gradient(71deg, rgba(0,200,250,1) 0%, rgba(223,60,60,1) 100%); 
   background-image: url("/assets/images/home-bg.jpg");
   -webkit-background-clip: text;
   background-clip: text;
-  background-size: cover;
+  background-size: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 h1 {
