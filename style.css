@@ -1,4 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800;700;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    font-size: 16px;
+  background-image: url("//picsum.photos/id/738/1920/1080");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+
+  background: rgb(0,255,233);
+  background: linear-gradient(71deg, rgba(0,200,250,1) 0%, rgba(223,60,60,1) 100%); 
+}
+
+.hero {
+  font-family: 'Nunito', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: transparent;
+  
+  
+  
+  background-image: url("/assets/images/home-bg.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+}
+
+h1 {
+  font-size: calc(3rem + 4vw);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: calc(2rem + 3vw);
+  font-weight: 600;
 }
