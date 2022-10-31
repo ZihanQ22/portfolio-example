@@ -1,5 +1,6 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 
+/* Sitewide fonts and colors */
 :root {
   --ff-primary: Inter, sans-serif;
   --ff-titles: Forum, serif;
