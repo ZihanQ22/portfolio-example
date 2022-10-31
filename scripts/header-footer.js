@@ -1,0 +1,1 @@
+const footer = `<footer>&copy; ${new Date().getFullYear()} Eduardo Kac</footer>`
