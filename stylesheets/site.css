@@ -16,6 +16,6 @@ body {
   font-family: var(--ff-primary);
 }
 
-.wrapper {
+#wrapper {
   flex-grow: 1;
 }
