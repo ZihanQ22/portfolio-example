@@ -1,6 +1,3 @@
-
-
-
 // import stylesheets
 const STYLESHEETS = [
   `<link rel="stylesheet" href="/stylesheets/fonts.css">`,
@@ -11,19 +8,15 @@ const STYLESHEETS = [
 ]
 
 STYLESHEETS.forEach((stylesheet) => {
-
   $('head').append(stylesheet);
-  
 })
 
+// import scripts
 const SCRIPTS = [
   `/scripts/header-footer.js`
 ]
 
-// import scripts
-
-
-
 SCRIPTS.forEach((script) => {
   $.getScript(script);
 })
+
