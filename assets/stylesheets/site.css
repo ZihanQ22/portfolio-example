@@ -20,3 +20,13 @@ body {
 #wrapper {
   flex-grow: 1;
 }
+
+main {
+  margin-block: 4rem;
+  margin-inline: auto;
+  max-width: 60rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-block: 1em;
+}

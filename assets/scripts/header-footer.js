@@ -1,5 +1,5 @@
 // HEADER
-$('#header-container').load('/components/header.html', function(){
+$('#header-container').load('/assets/components/header.html', function(){
 
   // add code here for things that should happen once the <header> loads.
 
