@@ -4,6 +4,7 @@
 :root {
   --ff-primary: Inter, sans-serif;
   --ff-titles: Forum, serif;
+  --ff-titles-2: Cairo, sans-serif;
 
   --clr-primary: hsl(0, 0%, 2%);
   --clr-secondary: hsl(0, 0%, 80%);
@@ -22,12 +23,11 @@ body {
 }
 
 main {
-  margin-block: 4rem;
-  margin-inline: auto;
+  margin: 4rem auto;
   max-width: 60rem;
   padding: 0 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-block: 1em;
+  
 }

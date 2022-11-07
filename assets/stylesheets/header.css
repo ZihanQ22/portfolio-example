@@ -2,8 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 2em;
-  box-shadow: 0 0px 16px -12px;
+  padding: .5em 2em;
+  /* box-shadow: 0 0px 12px -2px rgba(255, 255, 255, 0.3); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #0a0a0a;
 }
 
 .main-nav {
@@ -19,8 +25,6 @@
 .main-nav a:hover {
   color: var(--clr-accent);
 }
-
-
 
 .logo {
   width: clamp(50px, 50px + 1vw, 100px);

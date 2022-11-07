@@ -1,0 +1,12 @@
+section h2 {
+  text-align: right;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 1em;
+}
+
+section p {
+  font-size: 2rem;
+  line-height: 2;
+}
