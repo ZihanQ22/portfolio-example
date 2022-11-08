@@ -9,6 +9,12 @@
   --clr-primary: hsl(0, 0%, 2%);
   --clr-secondary: hsl(0, 0%, 80%);
   --clr-accent: hsl(353, 60%, 60%);
+
+  --fs-xl: clamp(2rem, 16vw, 5rem);
+  --fs-l: clamp(1.75rem, 14vw, 4rem);
+  --fs-m: clamp(1.125rem, 8vw, 1.5rem);
+  --fs-s: clamp(1rem, 8vw, 2rem);
+  --fs-xs: clamp(.8rem, 4vw, 1rem);
 }
 
 body {
