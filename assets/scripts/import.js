@@ -1,22 +1,16 @@
-// import stylesheets
-const STYLESHEETS = [
-  `<link rel="stylesheet" href="/assets/stylesheets/fonts.css">`,
-  `<link rel="stylesheet" href="/assets/stylesheets/site.css">`,
-  `<link rel="stylesheet" href="/assets/stylesheets/header.css">`,
-  `<link rel="stylesheet" href="/assets/stylesheets/footer.css">`,
-  `<link rel="stylesheet" href="style.css">`
-]
+const STYLESHEETS = ["fonts", "site", "header", "footer"];
 
 STYLESHEETS.forEach((stylesheet) => {
-  $('head').append(stylesheet);
+  const STYLESHEET_LOCATION = "/assets/stylesheets/"
+  const newLink = document.createElement("link");
+  newLink.setAttribute("rel", "stylesheet");
+  newLink.setAttribute("href", STYLESHEET_LOCATION + stylesheet + ".css")
+
+  document.head.append(newLink);
+
 })
 
-// import scripts
-const SCRIPTS = [
-  `/assets/scripts/header-footer.js`
-]
-
-SCRIPTS.forEach((script) => {
-  $.getScript(script);
-})
-
+const newLink = document.createElement("link");
+newLink.setAttribute("rel", "stylesheet");
+newLink.setAttribute("href", "style.css");
+document.head.append(newLink);

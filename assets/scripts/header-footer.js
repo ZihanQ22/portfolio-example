@@ -1,19 +1,32 @@
-// HEADER
-$('#header-container').load('/assets/components/header.html', function(){
+fetch('/assets/components/header.html').then(response => {
+  return response.text();
+}).then(header => {
+  document.body.insertAdjacentHTML("afterbegin", header);
+})
 
-  // add code here for things that should happen once the <header> loads.
+  // FOOTER
 
-  // for example, this is where you would add functionality for dealing with a toggle-able hamburger menu.
+  const footer = document.createElement('footer');
+  const footerText = document.createTextNode(`© ${new Date().getFullYear()} Portfolio Example`)
+  footer.appendChild(footerText)
 
+  document.body.append(footer)
 
+// async function load() {
 
-});
+//   // HEADER
+//   const response = await fetch('/assets/components/header.html');
+//   const header = await response.text();
+//   document.body.insertAdjacentHTML("afterbegin", header);
 
+//   // FOOTER
 
+//   const footer = document.createElement('footer');
+//   const footerText = document.createTextNode(`© ${new Date().getFullYear()} Portfolio Example`)
+//   footer.appendChild(footerText)
 
+//   document.body.append(footer)
+// }
 
-// FOOTER
+// // load();
 
-const footer = `<footer>&copy; ${new Date().getFullYear()} Portfolio Example</footer>`
-
-$('body').append(footer)
