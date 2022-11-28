@@ -13,6 +13,11 @@ h1 {
     margin-bottom: 1em;
 }
 
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     padding: 2em;
     text-align: center;
