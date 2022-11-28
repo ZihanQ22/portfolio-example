@@ -13,14 +13,9 @@ h1 {
     margin-bottom: 1em;
 }
 
-header {
+header, footer {
     padding: 2em;
     text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 2em;
 }
 
 #main-nav {
