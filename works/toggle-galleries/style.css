@@ -1,1 +1,53 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: Arial;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+h1 {
+    margin-bottom: 1em;
+}
+
+header {
+    padding: 2em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2em;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: center;
+    gap: .5em 3em;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.gallery-container {
+    display: none;
+}
+
+/* this ensures that when the page loads, the first gallery-container is visible */
+.gallery-container:nth-child(1) {
+    display: block;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}

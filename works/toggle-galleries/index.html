@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,55 @@
     <link rel="stylesheet" href="style.css">
     <title>Toggle Galleries</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a class="gallery-link" href="#birds">Birds</a>
-            <a class="gallery-link" href="#capuchins">Capuchins</a>
-            <a class="gallery-link" href="#dolphins">Dolphins</a>
-        </nav>
-    </header>
-    <main>
-        <div class="galleries-container">
-            <div class="gallery" id="birds">
-                <img src="images/birds/1.jpg" alt="bird">
+    <div class="wrapper">
+
+        <header>
+            <h1>Toggle Galleries</h1>
+            <nav id="main-nav">
+                <a class="gallery-link" href="#birds">Birds</a>
+                <a class="gallery-link" href="#capuchins">Capuchins</a>
+                <a class="gallery-link" href="#dolphins">Dolphins</a>
+            </nav>
+        </header>
+        <main>
+            <div id="all-galleries">
+                <div class="gallery-container" id="birds">
+                    <div class="gallery">
+                        <img src="images/birds/1.jpg" alt="bird">
+                        <img src="images/birds/2.jpg" alt="bird">
+                        <img src="images/birds/3.jpg" alt="bird">
+                        <img src="images/birds/4.jpg" alt="bird">
+                        <img src="images/birds/5.jpg" alt="bird">
+                    </div>
+                </div>
+                <div class="gallery-container" id="capuchins">
+                    <div class="gallery">
+                        <img src="images/capuchins/1.jpg" alt="capuchin">
+                        <img src="images/capuchins/2.jpg" alt="capuchin">
+                        <img src="images/capuchins/3.jpg" alt="capuchin">
+                        <img src="images/capuchins/4.jpg" alt="capuchin">
+                        <img src="images/capuchins/5.jpg" alt="capuchin">
+                    </div>
+                </div>
+                <div class="gallery-container" id="dolphins">
+                    <div class="gallery">
+                        <img src="images/dolphins/1.jpg" alt="dolphin">
+                        <img src="images/dolphins/2.jpg" alt="dolphin">
+                        <img src="images/dolphins/3.jpg" alt="dolphin">
+                        <img src="images/dolphins/4.jpg" alt="dolphin">
+                        <img src="images/dolphins/5.jpg" alt="dolphin">
+                    </div>
+                </div>
             </div>
-        </div>
-        
-    </main>
-    <footer>
-        <p>&copy; 2022 Doug Rosman</p>
-    </footer>
+
+        </main>
+        <footer>
+            <p>&copy; 2022 Doug Rosman</p>
+        </footer>
+
+    </div>
 </body>
+
 </html>
