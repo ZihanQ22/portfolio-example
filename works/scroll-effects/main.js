@@ -34,7 +34,6 @@ ScrollReveal().reveal('section:nth-child(odd)', {
     delay: 100,
     duration: 500,
     origin: "left",
-    reset: true,
     easing: "ease",
     viewOffset: {
         top: 100,
@@ -46,7 +45,6 @@ ScrollReveal().reveal('section:nth-child(even)', {
     delay: 300,
     duration: 500,
     origin: "right",
-    reset: true,
     easing: "ease",
     viewOffset: {
         top: 200,
