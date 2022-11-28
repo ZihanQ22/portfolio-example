@@ -31,6 +31,7 @@ footer {
     font-size: 1.25rem;
 }
 
+/* We use a separate .gallery-container class for "separation of concerns" reasons. Basically, we use a .gallery-container here to TOGGLE THE VISIBILITY OF A GALLERY, whereas the .gallery class below is concerned with ACTUALLY STYLING THE GALLERY. The jQuery only interacts with the .gallery-container elements, leaving the .gallery and its styling untouched. */
 .gallery-container {
     display: none;
 }
@@ -40,6 +41,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+/* this ensures that when the page loads, the first gallery-container is visible */
 .gallery-container:nth-child(1) {
     display: block;
 }
