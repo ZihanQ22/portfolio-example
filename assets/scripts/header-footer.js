@@ -4,6 +4,7 @@ fetch('/assets/components/header.html').then(response => {
   document.body.insertAdjacentHTML("afterbegin", header);
 })
 
+
   // FOOTER
 
   const footer = document.createElement('footer');
@@ -11,6 +12,16 @@ fetch('/assets/components/header.html').then(response => {
   footer.appendChild(footerText)
 
   document.body.append(footer)
+
+
+
+
+
+
+
+
+
+  
 
 // async function load() {
 
