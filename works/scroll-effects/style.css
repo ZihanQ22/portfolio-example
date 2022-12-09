@@ -1,0 +1,107 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+}
+
+
+h1, h2, h3 {
+    margin-bottom: 1em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+header, footer {
+    padding: 2em;
+    text-align: center;
+}
+
+header {
+    padding-top: 4em;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5em 2em;
+}
+
+header p {
+    background-color: #e6e6e6;
+    max-width: max-content;
+    margin: 2em auto;
+    padding: .5em 1em;
+    border-radius: 10rem;
+}
+
+nav a {
+    color: black;
+}
+
+main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2em 0;
+    margin: 10rem 0;
+}
+
+.section__content {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.section__content h2{
+    font-size: 3rem;
+}
+
+.section__content p {
+    font-size: 2rem;
+    line-height: 1.75;
+    margin: 1em 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    background-color: hsla(0, 0%, 0%, .85);
+    padding: 1em;
+    border-radius: .5em;
+    text-decoration: none;
+    line-height: .5;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background-color: #ddd;
+    z-index: 2;
+}
+
+#progress {
+    position: absolute;
+    width: 0;
+    height: 100%;
+}
